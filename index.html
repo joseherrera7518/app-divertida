@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mini app</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h2>mi app divertida</h2>
+
+<button onclick="generar()">HAZ CLICK</button>
+
+<p id="resultado"></p>
+
+<script>
+function generar() {
+    let opciones = [
+        "keneth no sabia que habia tarea",
+        "andy sabia que habia tarea y mejor no vino",
+        "a andy se le puncho la moto"
+    ];
+
+    let random = Math.floor(Math.random() * opciones.length);
+    document.getElementById("resultado").innerText = opciones[random];
+}
+</script>
+
+</body>
+</html>
